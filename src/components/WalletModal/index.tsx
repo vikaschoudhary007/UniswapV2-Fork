@@ -262,6 +262,7 @@ export default function WalletModal({
           <Option
             id={`connect-${key}`}
             onClick={() => {
+              console.log("vikas")
               option.connector === connector
                 ? setWalletView(WALLET_VIEWS.ACCOUNT)
                 : !option.href && tryActivation(option.connector);
